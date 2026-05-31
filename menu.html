@@ -1,0 +1,323 @@
+<!-- FINAL PROFESSIONAL menu.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Coffee Cafe Menu</title>
+
+<meta charset="UTF-8">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Segoe UI;
+    background:#f8f5f2;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#4e342e;
+    padding:18px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:18px;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.navbar a:hover{
+    color:#ffd54f;
+}
+
+/* HEADER */
+
+.header{
+    background:linear-gradient(to right,#6d4c41,#8d6e63);
+    color:white;
+    text-align:center;
+    padding:50px;
+}
+
+.header h1{
+    font-size:60px;
+    margin:0;
+}
+
+.header p{
+    font-size:22px;
+}
+
+/* MENU GRID */
+
+.menu-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    padding:50px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0px 0px 15px lightgray;
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+    text-align:center;
+}
+
+.content h2{
+    color:#5d4037;
+    font-size:32px;
+}
+
+.price{
+    color:#2e7d32;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.desc{
+    color:gray;
+    font-size:17px;
+    margin-bottom:20px;
+}
+
+/* BUTTON */
+
+button{
+    background:#6d4c41;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+button:hover{
+    background:black;
+    transform:scale(1.05);
+}
+
+/* ORDER BUTTON */
+
+.order-section{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#4e342e;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.footer a{
+    color:#ffd54f;
+    text-decoration:none;
+    margin:10px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .navbar a{
+        display:block;
+        margin:12px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<a href="login.html">Login</a>
+
+<a href="index.html">Home</a>
+
+<a href="menu.html">Menu</a>
+
+<a href="order.html">Order</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<h1>Our Coffee Menu</h1>
+
+<p>Fresh Coffee Made With Love</p>
+
+</div>
+
+<!-- MENU -->
+
+<div class="menu-container">
+
+<!-- CARD 1 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800">
+
+<div class="content">
+
+<h2>Cappuccino</h2>
+
+<p class="price">&#8377;180</p>
+
+<p class="desc">
+Creamy hot coffee with rich taste
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=800">
+
+<div class="content">
+
+<h2>Cold Coffee</h2>
+
+<p class="price">&#8377;150</p>
+
+<p class="desc">
+Refreshing chilled coffee drink
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1494314671902-399b18174975?w=800">
+
+<div class="content">
+
+<h2>Chocolate Latte</h2>
+
+<p class="price">&#8377;220</p>
+
+<p class="desc">
+Sweet chocolate flavored latte
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800">
+
+<div class="content">
+
+<h2>Espresso</h2>
+
+<p class="price">&#8377;120</p>
+
+<p class="desc">
+Strong and energetic coffee
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ORDER BUTTON -->
+
+<div class="order-section">
+
+<a href="order.html">
+
+<button>
+Order Coffee
+</button>
+
+</a>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<h2>Coffee Cafe</h2>
+
+<p>Fresh Coffee Made With Love</p>
+
+<p>
+
+<a href="">Instagram</a>
+
+|
+
+<a href="">Facebook</a>
+
+|
+
+<a href="">YouTube</a>
+
+</p>
+
+<p>&copy; 2026 Coffee Cafe</p>
+
+</div>
+
+</body>
+</html>
