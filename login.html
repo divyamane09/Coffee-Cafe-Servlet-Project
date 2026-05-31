@@ -1,0 +1,290 @@
+<!-- FINAL MODIFIED login.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Login - Coffee Cafe</title>
+
+<meta charset="UTF-8">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Segoe UI;
+    background:linear-gradient(to right,#f5ebe0,#fff3e0);
+    overflow:hidden;
+}
+
+/* MAIN CONTAINER */
+
+.main{
+    display:flex;
+    height:100vh;
+}
+
+/* LEFT SIDE */
+
+.left{
+    width:50%;
+    background:#5d4037;
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+    animation:leftSlide 1.5s;
+}
+
+@keyframes leftSlide{
+
+    from{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0px);
+    }
+
+}
+
+.left h1{
+    font-size:65px;
+    margin-bottom:10px;
+}
+
+.left p{
+    font-size:24px;
+    text-align:center;
+}
+
+.left img{
+    width:350px;
+    margin-top:20px;
+
+    border-radius:25px;
+
+    box-shadow:0px 0px 20px black;
+
+    transition:0.5s;
+}
+
+.left img:hover{
+    transform:scale(1.05);
+}
+
+/* RIGHT SIDE */
+
+.right{
+    width:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    animation:rightSlide 1.5s;
+}
+
+@keyframes rightSlide{
+
+    from{
+        opacity:0;
+        transform:translateX(100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0px);
+    }
+
+}
+
+/* LOGIN BOX */
+
+.login-box{
+    background:white;
+
+    width:420px;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:0px 0px 20px lightgray;
+
+    text-align:center;
+}
+
+.login-box h2{
+    color:#5d4037;
+    font-size:40px;
+}
+
+.login-box p{
+    color:gray;
+    font-size:18px;
+}
+
+/* INPUT */
+
+input{
+    width:85%;
+
+    padding:15px;
+
+    margin:12px;
+
+    border-radius:12px;
+
+    border:1px solid gray;
+
+    font-size:18px;
+
+    outline:none;
+
+    transition:0.5s;
+}
+
+input:focus{
+    border:2px solid #6d4c41;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+/* BUTTON */
+
+button{
+    background:#6d4c41;
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    font-size:20px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:0.5s;
+}
+
+button:hover{
+    background:black;
+    transform:scale(1.08);
+}
+
+/* LINKS */
+
+.links{
+    margin-top:20px;
+}
+
+.links a{
+    text-decoration:none;
+    color:#6d4c41;
+    margin:10px;
+}
+
+.links a:hover{
+    color:black;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .main{
+        flex-direction:column;
+    }
+
+    .left{
+        width:100%;
+        height:45vh;
+    }
+
+    .right{
+        width:100%;
+        height:55vh;
+    }
+
+    .left img{
+        width:220px;
+    }
+
+    .left h1{
+        font-size:45px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="main">
+
+<!-- LEFT SECTION -->
+
+<div class="left">
+
+<h1>Coffee Cafe</h1>
+
+<p>
+Fresh Coffee Made With Love
+</p>
+
+<img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800">
+
+</div>
+
+<!-- RIGHT SECTION -->
+
+<div class="right">
+
+<div class="login-box">
+
+<h2>Welcome Back</h2>
+
+<p>Login To Continue</p>
+
+<input type="text" placeholder="Enter Username">
+
+<br>
+
+<input type="password" placeholder="Enter Password">
+
+<br><br>
+
+<a href="index.html">
+<button>Login</button>
+</a>
+
+<div class="links">
+
+<a href="">Forgot Password?</a>
+
+|
+
+<a href="">Create Account</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
