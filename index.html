@@ -1,0 +1,448 @@
+<!-- FINAL UPDATED index.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Coffee Cafe</title>
+
+<meta charset="UTF-8">
+
+<style>
+
+/* BODY */
+
+body{
+    margin:0;
+    font-family:Segoe UI;
+    background:linear-gradient(to right,#f5ebe0,#fff3e0);
+    text-align:center;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#5d4037;
+    padding:18px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    box-shadow:0px 0px 10px gray;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:18px;
+    font-size:21px;
+    font-weight:bold;
+
+    transition:0.5s;
+}
+
+.navbar a:hover{
+    color:#ffd54f;
+}
+
+/* HERO SECTION */
+
+.hero{
+    margin-top:50px;
+
+    animation:fade 1.5s;
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0px);
+    }
+
+}
+
+.hero h1{
+    font-size:70px;
+    color:#5d4037;
+}
+
+.hero p{
+    font-size:24px;
+    color:#6d4c41;
+}
+
+/* MAIN IMAGE */
+
+.main-img{
+    width:380px;
+    height:260px;
+    border-radius:25px;
+    margin-top:20px;
+
+    box-shadow:0px 0px 20px gray;
+
+    transition:0.5s;
+}
+
+.main-img:hover{
+    transform:scale(1.05);
+}
+
+/* BUTTON */
+
+button{
+    background:#6d4c41;
+    color:white;
+    border:none;
+
+    padding:15px 35px;
+    font-size:20px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:0.5s;
+}
+
+button:hover{
+    background:black;
+    transform:scale(1.1);
+}
+
+/* SPECIAL TITLE */
+
+.special-title{
+    margin-top:70px;
+    font-size:45px;
+    color:#5d4037;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:280px;
+
+    margin:20px;
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:0px 0px 15px lightgray;
+
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    border-radius:20px;
+}
+
+.card h2{
+    color:brown;
+}
+
+.card p{
+    color:gray;
+}
+
+/* OFFER */
+
+.offer{
+    background:white;
+
+    width:550px;
+
+    margin:auto;
+    margin-top:70px;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    box-shadow:0px 0px 15px lightgray;
+
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.04);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+.offer h2{
+    color:#d84315;
+    font-size:38px;
+}
+
+.offer p{
+    font-size:22px;
+}
+
+/* FEATURES */
+
+.features{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+    margin-top:70px;
+}
+
+.feature-box{
+    background:white;
+
+    width:240px;
+
+    margin:20px;
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0px 0px 15px lightgray;
+
+    transition:0.5s;
+}
+
+.feature-box:hover{
+    transform:scale(1.05);
+}
+
+.feature-box h2{
+    color:brown;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#5d4037;
+    color:white;
+
+    margin-top:80px;
+
+    padding:30px;
+}
+
+.footer h2{
+    color:#ffd54f;
+}
+
+.footer a{
+    color:#ffd54f;
+    text-decoration:none;
+
+    margin:10px;
+
+    transition:0.5s;
+}
+
+.footer a:hover{
+    color:white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .main-img{
+        width:90%;
+        height:auto;
+    }
+
+    .offer{
+        width:85%;
+    }
+
+    .navbar a{
+        display:block;
+        margin:12px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<a href="login.html">Login</a>
+
+<a href="index.html">Home</a>
+
+<a href="menu.html">Menu</a>
+
+<a href="order.html">Order</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>Coffee Cafe</h1>
+
+<p>Fresh Coffee Made With Love</p>
+
+<p>Enjoy Every Sip With Happiness</p>
+
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"
+class="main-img">
+
+<br><br><br>
+
+<a href="menu.html">
+<button>Explore Menu</button>
+</a>
+
+</div>
+
+<!-- SPECIAL SECTION -->
+
+<h1 class="special-title">Our Special Coffee</h1>
+
+<div class="gallery">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800">
+
+<h2>Cappuccino</h2>
+
+<p>Hot & Creamy Coffee</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=800">
+
+<h2>Cold Coffee</h2>
+
+<p>Chilled & Refreshing</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1494314671902-399b18174975?w=800">
+
+<h2>Chocolate Latte</h2>
+
+<p>Sweet & Delicious</p>
+
+</div>
+
+</div>
+
+<!-- OFFER -->
+
+<div class="offer">
+
+<h2>Today's Special Offer</h2>
+
+<p>Buy 1 Coffee Get 1 Free</p>
+
+<p>Limited Time Offer</p>
+
+</div>
+
+<!-- FEATURES -->
+
+<div class="features">
+
+<div class="feature-box">
+
+<h2>Premium Coffee</h2>
+
+<p>Best quality beans & taste</p>
+
+</div>
+
+<div class="feature-box">
+
+<h2>Fast Delivery</h2>
+
+<p>Quick coffee delivery service</p>
+
+</div>
+
+<div class="feature-box">
+
+<h2>Customer Love</h2>
+
+<p>Trusted by coffee lovers</p>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<h2>Coffee Cafe</h2>
+
+<p>Made By Divya</p>
+
+<p>
+
+<a href="">Instagram</a>
+
+|
+
+<a href="">Facebook</a>
+
+|
+
+<a href="">YouTube</a>
+
+</p>
+
+<p>&copy; 2026 Coffee Cafe. All Rights Reserved.</p>
+
+</div>
+
+</body>
+</html>
