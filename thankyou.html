@@ -1,0 +1,206 @@
+<!-- UPDATED thankyou.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Order Success</title>
+
+<meta charset="UTF-8">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Segoe UI;
+    background:linear-gradient(to right,#f5ebe0,#fff3e0);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+}
+
+/* SUCCESS BOX */
+
+.success-box{
+    background:white;
+
+    width:450px;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0px 0px 20px lightgray;
+
+    animation:popup 1s;
+}
+
+/* ANIMATION */
+
+@keyframes popup{
+
+    from{
+        opacity:0;
+        transform:scale(0.5);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* TICK */
+
+.tick{
+
+    width:120px;
+    height:120px;
+
+    background:#2e7d32;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:70px;
+
+    color:white;
+
+    animation:bounce 1.2s infinite alternate;
+}
+
+@keyframes bounce{
+
+    from{
+        transform:translateY(0px);
+    }
+
+    to{
+        transform:translateY(-10px);
+    }
+
+}
+
+/* TEXT */
+
+.success-box h1{
+    color:#5d4037;
+    font-size:42px;
+    margin-top:25px;
+}
+
+.success-box p{
+    color:gray;
+    font-size:19px;
+    line-height:30px;
+}
+
+/* ORDER NUMBER */
+
+.order-id{
+    background:#fff3e0;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-top:25px;
+
+    font-size:24px;
+
+    color:#d84315;
+
+    font-weight:bold;
+}
+
+/* BUTTON */
+
+button{
+    background:#6d4c41;
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    font-size:20px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    margin-top:30px;
+
+    transition:0.4s;
+}
+
+button:hover{
+    background:black;
+    transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SUCCESS BOX -->
+
+<div class="success-box">
+
+<!-- TICK -->
+
+<div class="tick">
+
+✓
+
+</div>
+
+<!-- TEXT -->
+
+<h1>Order Successful</h1>
+
+<p>
+
+Thank You For Ordering From Coffee Cafe ☕  
+Your Coffee Is Being Prepared.
+
+</p>
+
+<!-- ORDER NUMBER -->
+
+<div class="order-id">
+
+☕ Order No : 101
+
+</div>
+
+<!-- BUTTON -->
+
+<a href="index.html">
+
+<button>
+
+Back To Home
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+</html>
